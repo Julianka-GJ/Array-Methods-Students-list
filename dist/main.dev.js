@@ -27,7 +27,7 @@ var names = students.reduce(function (result, user) {
   result.push(user.name);
   return result;
 }, []);
-console.log(names); //Вариант с испоьзованием map
+console.log(names); //Вариант с использованием map
 
 var namesOptionTwo = students.map(function (user) {
   return user.name;
@@ -51,4 +51,4 @@ function findGroupAverage(studentsList) {
 }
 
 var avgGroupMark = findGroupAverage(students);
-console.log(avgGroupMark); //---------------------------------------------------------------------------------------------------
+console.log(avgGroupMark);

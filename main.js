@@ -29,7 +29,7 @@ const names = students.reduce((result, user) => {
 
 console.log(names);
 
-//Вариант с испоьзованием map
+//Вариант с использованием map
 
 const namesOptionTwo = students.map((user) => user.name);
 console.log(namesOptionTwo);
@@ -52,4 +52,3 @@ function findGroupAverage(studentsList) {
 const avgGroupMark = findGroupAverage(students);
 console.log(avgGroupMark);
 
-//---------------------------------------------------------------------------------------------------
