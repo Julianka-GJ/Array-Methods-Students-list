@@ -52,3 +52,29 @@ function findGroupAverage(studentsList) {
 const avgGroupMark = findGroupAverage(students);
 console.log(avgGroupMark);
 
+//-----------------------Фильтрация по диапазону----------------------------------------
+
+let arr = [5, 3, 8, 1];
+
+function filterRange(arrNumber, a, b) {
+    return arrNumber.filter((value) => value >= a && value <= b);
+}
+
+let filtered = filterRange(arr, 1, 4);
+
+console.log(filtered);
+console.log(arr);
+
+//-------------------------Fibonacci recursion------------------------------------
+
+function fibonacciNumber(n) {
+    if (n === 1 || n === 2) {
+        return 1;
+    }
+    else if (n === 0) {
+        return 0;
+    }
+    return fibonacciNumber(n - 1) + fibonacciNumber(n - 2);
+}
+
+console.log(fibonacciNumber(25));
